@@ -50,7 +50,7 @@ void setup() {
       
   Serial.begin(9600);
   
-  /* Test code to turn all leds on
+  /* //Test code to turn all leds on
   byte b3 = 0b00000000;
   byte b2 = 0b00000000;
   byte b1 = 0b00000000;
