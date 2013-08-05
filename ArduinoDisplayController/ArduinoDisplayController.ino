@@ -1,6 +1,6 @@
-int dataPin = 8;
-int clockPin = 10;
-int latchPin = 12;
+int clockPin = 8;
+int latchPin = 10;
+int dataPin = 12;
 
 int board[8][24];
 int pinOrder[] = {30,29,28,27,26,25,24,31, 23,22,21,20,19,28,17,16, 7,6,5,4,3,2,1,0, 14,13,12,11,10,9,8,15};
@@ -46,7 +46,7 @@ void setup() {
   
   for (int row=0;row<8;row++)
     for (int col=0;col<24;col++)
-      board[row][col]=1;
+      board[row][col]=(col%3==0);
       
   Serial.begin(9600);
   
